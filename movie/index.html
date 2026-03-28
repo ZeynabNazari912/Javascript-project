@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Movie Night Planner</title>
+    </head>
+    <body>
+        <script>
+            let Name = prompt("What is your name?");
+            alert("Welcome to Movie Night Planner," + Name+ "!");           
+            let people = Number(prompt("How many people are coming?"));
+            let ticketPrice = Number(prompt("Ticket price per person?"));
+            let snackBudget = Number(prompt("Snack budget per person?"));
+            let movieType = prompt("Movie Type?").toLowerCase();
+
+            let totalCost = people * (ticketPrice + snackBudget);
+            let message ="";
+
+            if (movieType === "action") {
+                message = "Exciting night ahead";
+            
+            } else if (movieType === "comedy") {
+                message= "Get ready to laugh";
+            } else {
+                message = "Enjoy your movie night";
+
+            }
+
+            alert("Total cost: $" + totalCost + "\n" + message);
+             
+        </script>
+</html>
